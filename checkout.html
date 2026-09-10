@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | LMS Academy</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">LMS Academy</a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html" class="register-btn">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Checkout Banner -->
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Checkout</h1>
+            <p>Complete your purchase and start learning today.</p>
+        </div>
+    </section>
+
+    <!-- Checkout Section -->
+    <section class="checkout-section">
+
+        <div class="checkout-container">
+
+            <!-- Billing Details -->
+            <div class="billing-details">
+
+                <h2>Billing Information</h2>
+
+                <form id="checkoutForm">
+
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Enter your full name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea
+                            id="address"
+                            name="address"
+                            rows="4"
+                            placeholder="Enter your address"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <h2>Payment Method</h2>
+
+                    <div class="payment-methods">
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="paymentMethod"
+                                value="card"
+                                checked
+                            >
+                            Credit / Debit Card
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="paymentMethod"
+                                value="upi"
+                            >
+                            UPI
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="paymentMethod"
+                                value="netbanking"
+                            >
+                            Net Banking
+                        </label>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cardNumber">Card Number</label>
+                        <input
+                            type="text"
+                            id="cardNumber"
+                            placeholder="1234 5678 9012 3456"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cardName">Card Holder Name</label>
+                        <input
+                            type="text"
+                            id="cardName"
+                            placeholder="Enter card holder name"
+                        >
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="expiryDate">Expiry Date</label>
+                            <input
+                                type="month"
+                                id="expiryDate"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input
+                                type="password"
+                                id="cvv"
+                                maxlength="3"
+                                placeholder="123"
+                            >
+                        </div>
+
+                    </div>
+
+                    <button type="submit" class="place-order-btn">
+                        Place Order
+                    </button>
+
+                </form>
+
+            </div>
+
+            <!-- Order Summary -->
+            <div class="order-summary">
+
+                <h2>Order Summary</h2>
+
+                <div class="summary-item">
+                    <span>HTML & CSS Mastery</span>
+                    <span>₹999</span>
+                </div>
+
+                <div class="summary-item">
+                    <span>JavaScript Essentials</span>
+                    <span>₹1499</span>
+                </div>
+
+                <div class="summary-item">
+                    <span>Python Programming</span>
+                    <span>₹1999</span>
+                </div>
+
+                <hr>
+
+                <div class="summary-item">
+                    <span>Subtotal</span>
+                    <span>₹4497</span>
+                </div>
+
+                <div class="summary-item">
+                    <span>Discount</span>
+                    <span>- ₹500</span>
+                </div>
+
+                <hr>
+
+                <div class="summary-item total-price">
+                    <strong>Total</strong>
+                    <strong>₹3997</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>LMS Academy</h3>
+            <p>Your one-stop platform for online learning.</p>
+            <p>&copy; 2026 LMS Academy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
